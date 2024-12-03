@@ -73,3 +73,16 @@ To provide a centralized platform where users can:
    - Deliver a bug-free, user-friendly, and accessible platform for movie enthusiasts.
 
 ---
+## *Types of Tests*
+
+### *1. Unit Testing*
+- *Why*: Validate backend logic, such as authentication and input validation.
+- *Example*: Testing registerUser() for correct password hashing.
+
+### *2. Integration Testing*
+- *Why*: Verify seamless communication between frontend and backend.
+- *Example*: Ensure search queries retrieve correct results from the API.
+
+### *3. System Testing*
+- *Why*: Test end-to-end workflows.
+- *Example*: From user registration to adding movies to a watchlist.
