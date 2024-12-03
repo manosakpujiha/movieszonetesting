@@ -86,3 +86,30 @@ To provide a centralized platform where users can:
 ### *3. System Testing*
 - *Why*: Test end-to-end workflows.
 - *Example*: From user registration to adding movies to a watchlist.
+
+### **4. User Interface (UI) Testing**
+- **Why**: Ensure the app’s interface is visually correct and functional.
+- **Example**: Test trailer cards' responsiveness on different devices.
+
+### **5. Usability Testing**
+- **Why**: Ensure the app is user-friendly and intuitive.
+- **Example**: Verify users can easily locate and play trailers.
+
+### **6. Accessibility Testing**
+- **Why**: Ensure compliance with WCAG standards.
+- **Example**: Verify screen readers can announce movie titles and descriptions.
+
+---
+
+## **Testing Techniques**
+
+| **Testing Technique**        | **Why Appropriate**                                                                 | **How to Implement**                                                                                       | **Related Testing Types**                                           |
+|-------------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Boundary Value Analysis**   | Handles edge cases for input fields like search or registration.                    | Test inputs at minimum, maximum, and just outside boundaries.                                             | Unit Testing, System Testing                                        |
+| **Equivalence Partitioning**  | Tests valid/invalid inputs without redundancy.                                      | Group inputs into equivalence classes and test one from each.                                              | Unit Testing, Acceptance Testing                                    |
+| **Decision Table Testing**    | Systematically evaluates all combinations of conditions and outcomes.               | Create decision tables for features like login or search filters.                                         | Integration Testing, System Testing                                 |
+| **State Transition Testing**  | Ensures proper state changes (e.g., logged out → logged in).                        | Map states and transitions; test each action-triggered state change.                                      | System Testing, UI Testing                                          |
+| **Use Case Testing**          | Tests key workflows, such as movie searching or watchlist updates.                  | Identify use cases, define steps, and validate outcomes.                                                  | Acceptance Testing, System Testing                                  |
+| **Exploratory Testing**       | Identifies hidden issues through unscripted interactions.                           | Manually interact with the app and document unexpected behaviors.                                         | Usability Testing, System Testing                                   |
+
+---
