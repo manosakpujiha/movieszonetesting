@@ -60,5 +60,33 @@ Integration tests validated the interaction between the front-end and back-end c
 
 
 
+## Integration Testing
+
+#### Boundary Value Analysis
+Why it is appropriate:
+•	The Movies Zone application includes various input fields, such as search bar queries, registration forms (e.g., usernames, passwords), and numeric limits (e.g., watchlist length). Boundary Value Analysis (BVA) ensures these fields handle edge cases properly.
+How to implement it:
+1.	Identify input fields or values with defined limits (e.g., maximum characters in a username or search query).
+2.	Test the inputs at:
+   Minimum boundary (e.g., 1 character).
+   Maximum boundary (e.g., 50 characters).
+  Just outside the boundaries (e.g., 0 characters, 51 characters).
+3.	Validate that the system handles all boundary cases correctly (e.g., appropriate error messages, successful submissions).
+Related Testing Types:
+   Unit Testing: To validate the behavior of individual form validation functions.
+   System Testing: To ensure the entire workflow handles boundary inputs seamlessly.
+
+#### Equivalence Partitioning
+Why it is appropriate:
+•	The application processes inputs like genres, valid/invalid credentials, and user actions. Equivalence Partitioning groups inputs into valid and invalid categories, reducing redundant test cases while maintaining effectiveness.
+How to implement it:
+1.	Identify input fields or functionality with distinct categories (e.g., login credentials).
+2.	Group inputs into equivalence classes:
+   Valid inputs (e.g., properly formatted email and password).
+   Invalid inputs (e.g., incorrect email format, empty fields, incorrect password).
+3.	Test one representative from each category to confirm expected behavior.
+Related Testing Types:
+  Unit Testing: For validating individual input handling logic.
+  Acceptance Testing: To verify real-world user scenarios using valid and invalid
 
 
