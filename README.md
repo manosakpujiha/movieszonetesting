@@ -187,6 +187,45 @@ To provide a centralized platform where users can:
 
 ## Next Steps:
 
+
+
+
+### Challenges Faced and Solutions Applied
+
+#### Landing Page Unit Tests
+*Contributor:* Sandra Justus
+
+- *Obstacle:* 
+  - Encountered an error related to HTMLFormElement.prototype.submit not being implemented in the test environment.
+- *Solution:* 
+  - Refactored the button click test to use preventDefault in the handleClick function, avoiding the actual form submission during the test.
+
+- *Obstacle:* 
+  - Difficulty ensuring that the changeScreen function was called when the "GET STARTED" button was clicked.
+- *Solution:* 
+  - Mocked the changeScreen function and verified its invocation using jest.fn().
+
+#### Nav Component Unit Tests
+*Contributor:* Manos Akpujiha
+
+- *Obstacle:* 
+  - Tests failed to locate elements like the navigation logo and avatar due to the absence of accessible roles or matching queries.
+- *Solution:* 
+  - Added alt attributes (e.g., alt="logo", alt="avatar") and utilized getByAltText queries to accurately target elements.
+
+- *Obstacle:* 
+  - Challenges with simulating the "scroll" event for testing the dynamic class application (nav__black).
+- *Solution:* 
+  - Used window.scrollTo to programmatically trigger the scroll event and verified class changes using assertions.
+
+- *Obstacle:* 
+  - Ensuring proper integration with Redux for tests involving user state.
+- *Solution:* 
+  - Mocked the Redux store using redux-mock-store to test scenarios with and without user data effectively.
+
+### Summary
+Both components faced environment-specific issues and challenges simulating user interactions. Each obstacle was resolved through strategic use of mocks, utility functions, and proper test environment configurations, ensuring accurate and reliable test results.
+
 ### Usability Testing:
 1. **Objective:** Evaluate user interaction and overall application flow.  
 2. **Tool:**
