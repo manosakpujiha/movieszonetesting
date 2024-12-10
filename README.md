@@ -137,3 +137,59 @@ To provide a centralized platform where users can:
 
 
 
+
+
+# Minutes of Meeting: Movies Zone Project Update
+
+**Date:** December 9, 2024  
+**Time:** 10:30 AM  
+
+---
+
+## Agenda:
+1. Update on Unit Tests  
+2. Next Steps: Usability Testing  
+
+---
+
+## Key Updates:
+
+### Unit Testing Progress:
+- **Landing Page Component:**  
+  - Unit tests completed by **Sandra Justus**.  
+  - Tests verified:
+    - Main header rendering.
+    - Subheader rendering.
+    - "GET STARTED" button functionality.  
+  - **Result:** All tests passed successfully.  
+
+- **Signup Component:**  
+  - Unit tests completed by **Suman Humagain**.  
+  - Tests covered:
+    - Input validation.
+    - Button click functionality.
+    - Submission handling.  
+  - **Result:** All tests passed successfully.  
+
+- **Nav Component:**  
+  - Unit tests completed by **Manos Akpujiha**.  
+  - Tests included:
+    - Navigation bar rendering.
+    - User email display.
+    - Navigation button functionality.  
+  - **Result:** All tests passed successfully.  
+
+### Overall Unit Testing Status:
+- Core components of the project have been tested with Jest and React Testing Library.  
+- The application’s core functionalities are validated and stable.  
+
+---
+
+## Next Steps:
+
+### Usability Testing:
+1. **Objective:** Evaluate user interaction and overall application flow.  
+2. **Tool:**
+
+
+
