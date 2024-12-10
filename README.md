@@ -113,3 +113,27 @@ To provide a centralized platform where users can:
 | **Exploratory Testing**       | Identifies hidden issues through unscripted interactions.                           | Manually interact with the app and document unexpected behaviors.                                         | Usability Testing, System Testing                                   |
 
 ---
+
+## **Check-In 2 Updates**
+###**Progress Updates**
+
+###**Tasks Inprogress:**
+###**Unit Tests:**
+
+Implemented tests for Firebase authentication methods using Jest.
+Verified the correct functioning of login, registration, and authentication error handling.
+###**UI Tests:**
+
+Designed tests to check the presence of required elements, such as the search and filter components.
+Tested the functionality of the SignIn button to ensure it responds correctly when clicked.
+Began verifying the responsiveness and correct display of UI components across different devices.
+
+###**SignIn Screen and NavBar Component Tests:**
+Added test cases for the SignIn Screen and NavBar Component to ensure correct rendering and functionality under different conditions.
+
+####**Accessibility Tests:**
+Conducted basic accessibility checks using tools like Lighthouse and manual testing.
+Fixed issues found in form elements, such as missing input labels and ensuring buttons are focusable.
+
+
+
