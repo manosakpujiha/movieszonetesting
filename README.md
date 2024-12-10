@@ -186,7 +186,9 @@ To provide a centralized platform where users can:
 ---
 
 ## Next Steps:
-
+### Usability Testing:
+1. **Objective:** Evaluate user interaction and overall application flow.  
+2. **Tool:*Selenium*
 
 
 
@@ -226,9 +228,7 @@ To provide a centralized platform where users can:
 ### Summary
 Both components faced environment-specific issues and challenges simulating user interactions. Each obstacle was resolved through strategic use of mocks, utility functions, and proper test environment configurations, ensuring accurate and reliable test results.
 
-### Usability Testing:
-1. **Objective:** Evaluate user interaction and overall application flow.  
-2. **Tool:**
+
 
 
 
