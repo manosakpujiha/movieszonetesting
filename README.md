@@ -1,10 +1,6 @@
 # **Movies Zone Testing Plan**
-<span style="color: red;">This text is red.</span>
 
-🔴
-🔴 This text is "red-like"
-🔵 This text is "blue-like"
-🟢 This text is "green-like"
+
 
 ![Red Text](https://via.placeholder.com/350x70.png?text=This+text+is+red)
 
@@ -16,10 +12,6 @@
 
 
 
-<span style="color: blue;">This text is blue.</span>
-
-<span style="color: green;">This text is green.</span>
-<span style="color: blue;">## **Links**</span>
 
 
 ## **Links**
@@ -31,14 +23,14 @@
 
 ---
 
-## **Group Information**
+## **🔵 Group Information**
 - **Manos Akpujiha**: A00289665  
 - **Sandra Justus**: A00306078  
 - **Suman Humagain**: A00298790  
 
 ---
 
-## **Codebase**
+## **🔵 Codebase**
 
 ### **Application Description**
 **Movies Zone** is a web application designed for movie enthusiasts to explore and stay updated on the latest trailers. It offers a rich library of movie trailers categorized by genres and user preferences.
