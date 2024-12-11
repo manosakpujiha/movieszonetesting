@@ -56,7 +56,7 @@ To provide a centralized platform where users can:
    - Testing practices can be extended to similar applications.
 
 ---
-
+🔵🟢
 ## **🔵Testing Strategy**
 
 ### **Overall Approach**
@@ -127,31 +127,8 @@ To provide a centralized platform where users can:
 ---
 
 # **🟢Check-In 2 Updates**
-## *Progress Updates*
 
-### *Tasks Inprogress:*
-
-### *Unit Tests:*
-- Implemented tests for Firebase authentication methods using Jest.
-- Verified the correct functioning of login, registration, and authentication error handling.
-
-### *UI Tests:*
-- Designed tests to check the presence of required elements, such as the search and filter components.
-- Tested the functionality of the SignIn button to ensure it responds correctly when clicked.
-- Began verifying the responsiveness and correct display of UI components across different devices.
-
-### *SignIn Screen and NavBar Component Tests:*
-- Added test cases for the SignIn Screen and NavBar Component to ensure correct rendering and functionality under different conditions.
-
-### *Accessibility Tests:*
-- Conducted basic accessibility checks using tools like Lighthouse and manual testing.
-- Fixed issues found in form elements, such as missing input labels and ensuring buttons are focusable.
-
-
-
-
-
-# Minutes of Meeting: Movies Zone Project Update
+# *🔵Meeting 2 Minutes: Movies Zone Project Update*
 
 **Date:** December 9, 2024  
 **Time:** 10:30 AM  
@@ -202,9 +179,28 @@ To provide a centralized platform where users can:
 1. **Objective:** Evaluate user interaction and overall application flow.  
 2. **Tool:*Selenium*
 
+## *🔵Progress Updates*
+
+### *Tasks Inprogress:*
+
+### *Unit Tests:*
+- Implemented tests for Firebase authentication methods using Jest.
+- Verified the correct functioning of login, registration, and authentication error handling.
+
+### *UI Tests:*
+- Designed tests to check the presence of required elements, such as the search and filter components.
+- Tested the functionality of the SignIn button to ensure it responds correctly when clicked.
+- Began verifying the responsiveness and correct display of UI components across different devices.
+
+### *SignIn Screen and NavBar Component Tests:*
+- Added test cases for the SignIn Screen and NavBar Component to ensure correct rendering and functionality under different conditions.
+
+### *Accessibility Tests:*
+- Conducted basic accessibility checks using tools like Lighthouse and manual testing.
+- Fixed issues found in form elements, such as missing input labels and ensuring buttons are focusable.
 
 
-### Challenges Faced and Solutions Applied
+### *🔵Challenges Faced and Solutions Applied*
 
 #### Landing Page Unit Tests
 *Contributor:* Sandra Justus
