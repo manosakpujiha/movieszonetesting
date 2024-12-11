@@ -1,5 +1,9 @@
 # **Movies Zone Testing Plan**
+<span style="color: red;">This text is red.</span>
 
+<span style="color: blue;">This text is blue.</span>
+
+<span style="color: green;">This text is green.</span>
 <span style="color: blue;">## **Links**</span>
 ## **Links**
 - [Azure DevOps](https://dev.azure.com/A00289665/Movies%20Zone)
