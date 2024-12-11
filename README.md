@@ -9,7 +9,7 @@
 - [Hosted Application](https://manos-movieszone.netlify.app/)
 
 ---
-
+# **🟢Check-In 1 Updates**
 ## **🔵 Group Information**
 - **Manos Akpujiha**: A00289665  
 - **Sandra Justus**: A00306078  
@@ -57,7 +57,7 @@ To provide a centralized platform where users can:
 
 ---
 
-##🔵 **Testing Strategy**
+## **🔵Testing Strategy**
 
 ### **Overall Approach**
 1. **Test Objectives**:
@@ -81,7 +81,7 @@ To provide a centralized platform where users can:
    - Deliver a bug-free, user-friendly, and accessible platform for movie enthusiasts.
 
 ---
-##🔵 *Types of Tests*
+## *🔵Types of Tests*
 
 ### *1. Unit Testing*
 - *Why*: Validate backend logic, such as authentication and input validation.
@@ -109,7 +109,7 @@ To provide a centralized platform where users can:
 
 ---
 
-## **Testing Techniques**
+## **🔵Testing Techniques**
 
 | **Testing Technique**        | **Why Appropriate**                                                                 | **How to Implement**                                                                                       | **Related Testing Types**                                           |
 |-------------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -119,14 +119,14 @@ To provide a centralized platform where users can:
 | **State Transition Testing**  | Ensures proper state changes (e.g., logged out → logged in).                        | Map states and transitions; test each action-triggered state change.                                      | System Testing, UI Testing                                          |
 | **Use Case Testing**          | Tests key workflows, such as movie searching or watchlist updates.                  | Identify use cases, define steps, and validate outcomes.                                                  | Acceptance Testing, System Testing                                  |
 | **Exploratory Testing**       | Identifies hidden issues through unscripted interactions.                           | Manually interact with the app and document unexpected behaviors.                                         | Usability Testing, System Testing                                   |
-## **Links**
+## **🔵Links**
 - [Azure DevOps](https://dev.azure.com/A00289665/Movies%20Zone)
 - [Slack Workspace](https://app.slack.com/client/T083780CDU5/C083NQE925P)
 
 
 ---
 
-## **Check-In 2 Updates**
+# **🟢Check-In 2 Updates**
 ## *Progress Updates*
 
 ### *Tasks Inprogress:*
