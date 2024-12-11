@@ -202,21 +202,21 @@ To provide a centralized platform where users can:
 ## *🔵Details of Tests Implemented*
 ### • Testing types and techniques applied.
       Testing Techniques Applied:
-      1. Boundary Value Analysis (BVA):
-      Description: Focuses on testing edge cases around boundaries where the behavior of the component is expected to change.
-      Examples in the Tests:
-      The test that checks whether the nav__black class is applied when scrolling past a threshold.
-      The test ensuring proper rendering when the user is null or defined (boundary between "no user" and "user present").
-      2. Equivalence Partitioning:
-      Description: Divides input data into equivalent partitions and tests one representative value from each partition.
-      Examples in the Tests:
-      The fallback username test for when the user is undefined represents the "no user" partition.
-      The test for rendering the correct email when the user is defined represents the "valid user" partition.
-      3. State Transition Testing:
-      Description: Tests different states of the component based on input or events (e.g., scrolling, user actions).
-      Examples in the Tests:
-      The test for applying the nav__black class when show is true reflects a transition from "default" to "scrolled" state.
-      Tests verifying logo and avatar navigation simulate transitions between different application states (e.g., moving to home or profile pages).
+         1. Boundary Value Analysis (BVA):
+            **Description:** Focuses on testing edge cases around boundaries where the behavior of the component is expected to change.
+            **Examples in the Tests:**
+            The test that checks whether the nav__black class is applied when scrolling past a threshold.
+            The test ensuring proper rendering when the user is null or defined (boundary between "no user" and "user present").
+         2. Equivalence Partitioning:
+            **Description: **Divides input data into equivalent partitions and tests one representative value from each partition.
+            Examples in the Tests:
+            The fallback username test for when the user is undefined represents the "no user" partition.
+            The test for rendering the correct email when the user is defined represents the "valid user" partition.
+         3. State Transition Testing:
+            Description: Tests different states of the component based on input or events (e.g., scrolling, user actions).
+            Examples in the Tests:
+            The test for applying the nav__black class when show is true reflects a transition from "default" to "scrolled" state.
+            Tests verifying logo and avatar navigation simulate transitions between different application states (e.g., moving to home or profile pages).
 
 
 
