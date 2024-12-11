@@ -21,6 +21,7 @@
 ### **Application Description**
 **Movies Zone** is a web application designed for movie enthusiasts to explore and stay updated on the latest trailers. It offers a rich library of movie trailers categorized by genres and user preferences.
 
+
 **Purpose**:  
 To provide a centralized platform where users can:
 - Stay informed about upcoming movies.
@@ -37,6 +38,12 @@ To provide a centralized platform where users can:
 
 ---
 
+## **Application Urls**
+- [GitHub Repo for Tests](https://github.com/manosakpujiha/movieszonetesting)
+- [GitHub Repo for Codebase](https://github.com/manosakpujiha/movies-zone)
+- [Hosted Application](https://manos-movieszone.netlify.app/)
+
+
 ## **Selection Reason for Testing**
 
 **Why Movies Zone?**
@@ -49,24 +56,24 @@ To provide a centralized platform where users can:
 
 ---
 
-## **Initial Testing Plan**
+## **Testing Strategy**
 
 ### **Overall Approach**
 1. **Test Objectives**:
    - Validate core features: user authentication, movie search, trailer playback, watchlist management.
    - Ensure usability, reliability, and accessibility.
 
-2. **Testing Types**:
-   - **Unit Testing**: Validate individual components like login and API responses.
-   - **Integration Testing**: Verify interactions between frontend, backend, and external APIs.
-   - **System Testing**: Test end-to-end workflows like user registration to watchlist updates.
-   - **UI Testing**: Check responsiveness and functionality across devices.
-   - **Accessibility Testing**: Ensure compliance with standards like screen reader compatibility.
-   - **Exploratory Testing**: Identify hidden issues through unscripted tests.
+2. **Testing Types to be carried out**:
+   - **Unit Testing**: Validate individual components like login and API responses. *#by Manos#*
+   - **Integration Testing**: Verify interactions between frontend, backend, and external APIs. *#by Suman#*
+   - **System Testing**: Test end-to-end workflows like user registration to watchlist updates. *#by Suman#*
+   - **UI Testing**: Check responsiveness and functionality across devices.         *#by Manos#*
+   - **Accessibility Testing**: Ensure compliance with standards like screen reader compatibility. *#by Sandra#*
+   - **Exploratory Testing**: Identify hidden issues through unscripted tests. *#by Sandra#*
 
 3. **Implementation**:
    - Use **Boundary Value Analysis**, **Equivalence Partitioning**, and **State Transition Testing**.
-   - Automate tests using Selenium for UI and Jest for backend components.
+   - Automate tests using Selenium for UI and Jest for functional testing of the individual components.
    - Integrate tests into CI/CD pipelines for continuous quality assurance.
 
 4. **Outcome**:
@@ -111,6 +118,10 @@ To provide a centralized platform where users can:
 | **State Transition Testing**  | Ensures proper state changes (e.g., logged out → logged in).                        | Map states and transitions; test each action-triggered state change.                                      | System Testing, UI Testing                                          |
 | **Use Case Testing**          | Tests key workflows, such as movie searching or watchlist updates.                  | Identify use cases, define steps, and validate outcomes.                                                  | Acceptance Testing, System Testing                                  |
 | **Exploratory Testing**       | Identifies hidden issues through unscripted interactions.                           | Manually interact with the app and document unexpected behaviors.                                         | Usability Testing, System Testing                                   |
+## **Links**
+- [Azure DevOps](https://dev.azure.com/A00289665/Movies%20Zone)
+- [Slack Workspace](https://app.slack.com/client/T083780CDU5/C083NQE925P)
+
 
 ---
 
