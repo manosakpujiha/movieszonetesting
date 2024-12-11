@@ -200,9 +200,9 @@ To provide a centralized platform where users can:
 
 
 ## *🔵Details of Tests Implemented*
-###• Testing types and techniques applied.
-###• Explanations of how each test was implemented.
-###• Code snippets or references to relevant code files.
+### • Testing types and techniques applied.
+### • Explanations of how each test was implemented.
+### • Code snippets or references to relevant code files.
 
 
 ## *🔵Challenges Faced and Solutions Applied*
