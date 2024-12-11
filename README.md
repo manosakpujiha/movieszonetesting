@@ -1,5 +1,6 @@
 # **Movies Zone Testing Plan**
 
+<span style="color: blue;">## **Links**</span>
 ## **Links**
 - [Azure DevOps](https://dev.azure.com/A00289665/Movies%20Zone)
 - [Slack Workspace](https://app.slack.com/client/T083780CDU5/C083NQE925P)
