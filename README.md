@@ -1,19 +1,6 @@
 # **Movies Zone Testing Plan**
 
 
-
-![Red Text](https://via.placeholder.com/350x70.png?text=This+text+is+red)
-
-
-![Example Badge](https://img.shields.io/badge/Links-Manos-red)
-
-![Example Badge](https://img.shields.io/badge/Example-Green-green)
-
-
-
-
-
-
 ## **Links**
 - [Azure DevOps](https://dev.azure.com/A00289665/Movies%20Zone)
 - [Slack Workspace](https://app.slack.com/client/T083780CDU5/C083NQE925P)
@@ -70,7 +57,7 @@ To provide a centralized platform where users can:
 
 ---
 
-## **Testing Strategy**
+##🔵 **Testing Strategy**
 
 ### **Overall Approach**
 1. **Test Objectives**:
@@ -94,7 +81,7 @@ To provide a centralized platform where users can:
    - Deliver a bug-free, user-friendly, and accessible platform for movie enthusiasts.
 
 ---
-## *Types of Tests*
+##🔵 *Types of Tests*
 
 ### *1. Unit Testing*
 - *Why*: Validate backend logic, such as authentication and input validation.
