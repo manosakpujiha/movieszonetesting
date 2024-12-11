@@ -56,7 +56,7 @@ To provide a centralized platform where users can:
    - Testing practices can be extended to similar applications.
 
 ---
-🔵🟢
+
 ## **🔵Testing Strategy**
 
 ### **Overall Approach**
@@ -124,11 +124,10 @@ To provide a centralized platform where users can:
 - [Slack Workspace](https://app.slack.com/client/T083780CDU5/C083NQE925P)
 
 
----
 
 # **🟢Check-In 2 Updates**
 
-# *🔵Meeting 2 Minutes: Movies Zone Project Update*
+## *🔵Meeting 2 Minutes: Movies Zone Project Update*
 
 **Date:** December 9, 2024  
 **Time:** 10:30 AM  
@@ -200,7 +199,13 @@ To provide a centralized platform where users can:
 - Fixed issues found in form elements, such as missing input labels and ensuring buttons are focusable.
 
 
-### *🔵Challenges Faced and Solutions Applied*
+## *🔵Details of Tests Implemented*
+###• Testing types and techniques applied.
+###• Explanations of how each test was implemented.
+###• Code snippets or references to relevant code files.
+
+
+## *🔵Challenges Faced and Solutions Applied*
 
 #### Landing Page Unit Tests
 *Contributor:* Sandra Justus
