@@ -11,10 +11,8 @@
 
 ![Example Badge](https://img.shields.io/badge/Example-Red-red)
 
+![Example Badge](https://img.shields.io/badge/Example-Green-green)
 
-```diff
-+ This text is green
-- This text is red
 
 
 
@@ -22,6 +20,8 @@
 
 <span style="color: green;">This text is green.</span>
 <span style="color: blue;">## **Links**</span>
+
+
 ## **Links**
 - [Azure DevOps](https://dev.azure.com/A00289665/Movies%20Zone)
 - [Slack Workspace](https://app.slack.com/client/T083780CDU5/C083NQE925P)
