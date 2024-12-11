@@ -1,6 +1,23 @@
 # **Movies Zone Testing Plan**
 <span style="color: red;">This text is red.</span>
 
+🔴
+🔴 This text is "red-like"
+🔵 This text is "blue-like"
+🟢 This text is "green-like"
+
+![Red Text](https://via.placeholder.com/350x70.png?text=This+text+is+red)
+
+
+![Example Badge](https://img.shields.io/badge/Example-Red-red)
+
+
+```diff
++ This text is green
+- This text is red
+
+
+
 <span style="color: blue;">This text is blue.</span>
 
 <span style="color: green;">This text is green.</span>
