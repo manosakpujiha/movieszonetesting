@@ -201,8 +201,67 @@ To provide a centralized platform where users can:
 
 ## *🔵Details of Tests Implemented*
 ### • Testing types and techniques applied.
+      Testing Techniques Applied:
+      1. Boundary Value Analysis (BVA):
+      Description: Focuses on testing edge cases around boundaries where the behavior of the component is expected to change.
+      Examples in the Tests:
+      The test that checks whether the nav__black class is applied when scrolling past a threshold.
+      The test ensuring proper rendering when the user is null or defined (boundary between "no user" and "user present").
+      2. Equivalence Partitioning:
+      Description: Divides input data into equivalent partitions and tests one representative value from each partition.
+      Examples in the Tests:
+      The fallback username test for when the user is undefined represents the "no user" partition.
+      The test for rendering the correct email when the user is defined represents the "valid user" partition.
+      3. State Transition Testing:
+      Description: Tests different states of the component based on input or events (e.g., scrolling, user actions).
+      Examples in the Tests:
+      The test for applying the nav__black class when show is true reflects a transition from "default" to "scrolled" state.
+      Tests verifying logo and avatar navigation simulate transitions between different application states (e.g., moving to home or profile pages).
+
+
+
 ### • Explanations of how each test was implemented.
 ### • Code snippets or references to relevant code files.
+      1. Testing Type: Unit Testing
+      Suitability for the Codebase:
+      Unit testing is appropriate for the Nav.js component because it isolates individual functionality of the component, such as rendering elements based on user state or applying styles dynamically. This ensures that the component works as expected without interference from other parts of the application.
+      React components often have distinct states and behaviors that can be easily isolated and tested, making unit tests a natural fit.
+      Testing Techniques Applied:
+      Boundary Value Analysis (BVA)
+      Why Suitable:
+      Components like Nav.js often have thresholds that trigger specific behaviors (e.g., applying the nav__black class when scrolling past a certain point). Boundary Value Analysis is effective for testing these thresholds to ensure the expected behavior occurs right at and around the boundary.
+      How Implemented:
+      Example Test:
+      Checking whether the nav__black class is applied when show becomes true due to the scroll threshold.
+      Technique in Action:
+      Inputs like scrollY = 100 (boundary condition) were used to determine if the class application logic was functioning correctly.
+      Relationship to Testing Type:
+      BVA allows thorough testing of edge cases within a single component, a key focus of unit testing.
+      Equivalence Partitioning
+      Why Suitable:
+      Equivalence Partitioning reduces redundant tests by dividing possible inputs into equivalent classes, each of which should produce the same output. For the Nav.js component, there are distinct classes like:
+      "No user logged in" (user === null).
+      "User logged in" (user !== null).
+      How Implemented:
+      Example Tests:
+      Testing for "Guest" being displayed when the user is undefined or null.
+      Testing for the user's email being displayed when a valid user object is passed.
+      Technique in Action:
+      Each partition (no user vs. user) was tested with one representative value to ensure coverage.
+      Relationship to Testing Type:
+      This technique ensures unit tests cover all meaningful input partitions for the component.
+      State Transition Testing
+      Why Suitable:
+      The Nav.js component dynamically changes its appearance and functionality based on the application state (e.g., show changes when scrolling). Testing these transitions ensures the component behaves as expected under different state conditions.
+      How Implemented:
+      Example Tests:
+      Ensuring the nav__black class is applied when show is true.
+      Verifying navigation to the home page (navigate('/')) when the logo is clicked.
+      Testing the transition to the profile page (navigate('/profile')) when the avatar is clicked.
+      Technique in Action:
+      State changes were simulated through mocked interactions (e.g., scroll events, navigate calls) and verified via DOM assertions.
+      Relationship to Testing Type:
+      Unit tests are ideal for validating state-dependent logic within a single component.
 
 
 ## *🔵Challenges Faced and Solutions Applied*
