@@ -5,7 +5,7 @@
 ![Red Text](https://via.placeholder.com/350x70.png?text=This+text+is+red)
 
 
-![Example Badge](https://img.shields.io/badge/Example-Red-red)
+![Example Badge](https://img.shields.io/badge/## **Links**-Manos-red)
 
 ![Example Badge](https://img.shields.io/badge/Example-Green-green)
 
