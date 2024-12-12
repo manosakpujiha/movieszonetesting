@@ -3,9 +3,29 @@ const { Builder, By, until } = require('selenium-webdriver');
 const URL = 'https://manos-movieszone.netlify.app/';
 const SELECTORS = {
     getStartedButton: '.loginScreen__getStarted',
+    signUp: '.loginScreen__getStarted',
     emailInput: "input[type='email']",
     passwordInput: "input[type='password']",
-    submitButton: "button[type='submit']"
+    submitButton: "button[type='submit']",
+    createAccountButton: "button[type='submit']",
+    signUpLink: '.signupScreen__link'
+};
+const SIGNUP_SELECTORS = {
+    getStartedButton: '.loginScreen__getStarted',
+    nameInput: "input[type='name']",
+    emailInput: "input[type='email']",
+    passwordInput: "input[type='password']",
+    createAccountButton: "button[type='submit']",
+    signUpLink: '.signupScreen__link'
+};
+
+const NAV_SELECTORS = {
+    avatar: '.nav__avatar',
+};
+
+const PROFILE_SELECTORS = {
+    userEmail: '.profileScreen__details h2',  // User email displayed on profile page
+    profileImage: '.profileScreen__info img', // Profile image on the profile page
 };
 
 async function initializeDriver() {
@@ -47,7 +67,7 @@ async function loginToApp() {
     } catch (error) {
         console.error('An error occurred:', error);
     } finally {
-        await driver.quit();
+        //await driver.quit();
         console.log('Browser closed.');
     }
 }
@@ -113,24 +133,77 @@ async function readVideoDate() {
     }
 }
 
-async function navigateToProfile() {
-    let driver = await new Builder().forBrowser('chrome').build();
 
+async function navigateToProfile() {
+    let driver;
     try {
-        // Add your navigate to profile logic here
+        // Get the driver by logging in
+        driver = await loginToApp();
+
+        // Step 1: Wait for the avatar to be located and click it
+        await driver.findElement(By.css(NAV_SELECTORS.avatar)).click();
+
+        // const avatar = await driver.findElement(By.css(NAV_SELECTORS.avatar));
+        // await avatar.click();
+        console.log('Successfully clicked the profile avatar!');
+
+        // Step 2: Wait for the profile page to load (waiting for user email to be visible)
+        await waitForElement(driver, PROFILE_SELECTORS.userEmail);
+        console.log('Successfully navigated to the profile page!');
+
+        // Step 3: Optionally, you can take actions or validate information on the profile page
+        const userEmail = await driver.findElement(By.css(PROFILE_SELECTORS.userEmail)).getText();
+        console.log('User email on profile page:', userEmail);
+
+        // Optionally, verify the profile image is displayed
+        const profileImage = await driver.findElement(By.css(PROFILE_SELECTORS.profileImage));
+        const imageSrc = await profileImage.getAttribute('src');
+        console.log('Profile image source:', imageSrc);
+
     } catch (error) {
-        console.error('An error occurred:', error);
+        console.error('An error occurred during profile navigation:', error);
     } finally {
-        await driver.quit();
-        console.log('Browser closed.');
+        if (driver) {
+            await driver.quit();  // Quit driver only if it was initialized
+            console.log('Browser closed.');
+        }
     }
 }
+
 
 async function registerNewUser() {
-    let driver = await new Builder().forBrowser('chrome').build();
+    let driver = await initializeDriver();
 
     try {
-        // Add your register new user logic here
+        await driver.get(URL);
+        
+        // Wait for the page to load completely
+        await driver.sleep(3000);
+
+        // Click the "GET STARTED" button
+        await clickElement(driver, SIGNUP_SELECTORS.getStartedButton);
+        console.log('Successfully clicked the "GET STARTED" button!');
+
+        // Wait and click the "Sign Up now" link
+        await waitForElement(driver, SIGNUP_SELECTORS.signUpLink);
+        await clickElement(driver, SIGNUP_SELECTORS.signUpLink);
+        console.log('Successfully clicked Sign Up now button!');
+
+        // Enter display name
+        await enterText(driver, SIGNUP_SELECTORS.nameInput, 'Test User');
+        console.log('Successfully entered the display name!');
+
+        // Enter email
+        await enterText(driver, SIGNUP_SELECTORS.emailInput, 'testuser@example.com');
+        console.log('Successfully entered the email!');
+
+        // Enter password
+        await enterText(driver, SIGNUP_SELECTORS.passwordInput, 'testpassword');
+        console.log('Successfully entered the password!');
+
+        // Click the "Create Account" button
+        await clickElement(driver, SIGNUP_SELECTORS.createAccountButton);
+        console.log('Successfully clicked the "Create Account" button!');
     } catch (error) {
         console.error('An error occurred:', error);
     } finally {
@@ -138,6 +211,19 @@ async function registerNewUser() {
         console.log('Browser closed.');
     }
 }
+
+// async function registerNewUser() {
+//     let driver = await new Builder().forBrowser('chrome').build();
+
+//     try {
+//         // Add your register new user logic here
+//     } catch (error) {
+//         console.error('An error occurred:', error);
+//     } finally {
+//         await driver.quit();
+//         console.log('Browser closed.');
+//     }
+// }
 
 
 const action = process.argv[2];
